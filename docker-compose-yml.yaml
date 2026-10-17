@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  detector:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - SERPAPI_KEY=${SERPAPI_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.0-flash}
+      - CACHE_TTL_SECONDS=${CACHE_TTL_SECONDS:-1800}
+    restart: unless-stopped

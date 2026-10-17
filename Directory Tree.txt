@@ -1,0 +1,33 @@
+ai-fake-listing-detector/
+├── .dockerignore
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── requirements.txt
+├── docker-compose.yml
+├── .streamlit/
+│   └── config.toml
+├── app.py
+├── src/
+│   ├── __init__.py
+│   ├── cache.py
+│   ├── config.py
+│   ├── demo_cases.py
+│   ├── extractor.py
+│   ├── gemini_analysis.py
+│   ├── i18n.py
+│   ├── models.py
+│   ├── pipeline.py
+│   ├── scoring.py
+│   ├── url_safety.py
+│   └── collectors/
+│       ├── __init__.py
+│       ├── domain_age.py
+│       ├── image_search.py
+│       └── listing_features.py
+└── tests/
+    ├── __init__.py
+    ├── test_url_safety.py
+    ├── test_scoring.py
+    └── test_models.py
